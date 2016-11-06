@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+            form{
+                margin: 200px auto;
+                width: 1000px;
+                height: 400px;
+                padding: 30px 0 0 80px;
+                box-sizing: border-box;
+                border: 1px solid #000;
+            }
+            div{
+                
+                height: 30px;
+                padding: 0px 0 0 10px;
+                box-sizing: border-box;
+                border: 1px solid #000;
+            }
+            
+            input{
+                display: inline-block;
+                height: 20px;
+                border-radius: 3px;
+                border: 1px solid #000;
+            }
+            
+            input:focus {
+            
+            outline: none;
+            background-color: #f6f6f6;
+}
+            label{
+                display: inline-block;
+                width: 100px;
+                height: 20px;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                border-radius: 3px;
+            }
+            
+            #submit{
+                border: none;
+               width: 50px;
+                height: 20px;
+                background-color: #000;
+                color: #fff;
+                text-align: center; 
+                margin-left: 165px;
+                margin-top: 5px;
+                border-radius: 3px;
+            }
+            
+#submit:focus, #submit:hover {
+    background-color: #323030;
+}
+
+section{
+    display: inline-flex;
+    width: 800px;
+                height: 60px;
+    border: 1px solid #000;
+}
+
+#left{
+    float: left;
+}
+#right{
+    float: right;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+    width: 166px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    line-height: 1.8em;
+    text-align: center;
+    width: 166px;
+    padding: 0px;    
+    margin: 0px;
+
+}
+
+

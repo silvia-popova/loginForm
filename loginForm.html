@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="loginStyle.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+            $('input[type="submit"]').prop('disabled', true);
+            $('input[type="text"]').keyup(function() {
+               if($(this).val() != '' ) {
+                  $('input[type="submit"]').prop('disabled', false);
+                    }
+                 });
+             });
+             
+
+        </script>
+        
+    </head>
+    <body>
+        <form method="get" action="storage.html">	
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" pattern="[a-zA-Z0-9\- ]+" maxlength="40" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password"  pattern="[a-zA-Z0-9\- ]+" maxlength="40" />
+                </div>
+            <input type="submit" value="Login" id="submit" />
+            </form>
+    </body>
+</html>
